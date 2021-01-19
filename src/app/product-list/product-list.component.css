@@ -1,0 +1,6 @@
+.productContentWrapper main, app-product-list {
+    display: flex;
+}
+#static-5 .card-body {
+    border-bottom: none;
+}

@@ -1,0 +1,19 @@
+  <div class="filterControls">
+    <h5>Fitness Collection <span>(120)</span></h5>
+    <button class="btn d-lg-none" type="button" (click)="isMenuCollapsed = !isMenuCollapsed">
+      <i class="fas fa-filter"></i>
+    </button>
+  </div>
+  <div [ngbCollapse]="isMenuCollapsed">
+    <div class="row">
+      <div class="col-sm-12">
+        <form>
+          <div class="form-group resetFilter">
+            <label for="resetFilter">Filters</label>
+            <button type="reset" class="btn" name="resetFilter" id="resetFilter">Clear All</button>
+          </div>
+          <app-filter-accordion></app-filter-accordion>
+        </form>
+      </div>
+    </div>
+  </div>

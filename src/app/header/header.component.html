@@ -1,0 +1,58 @@
+<header id="header">
+  <div class="headerPrimary">
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-12">
+          <ul>
+            <li><a href="#"><span class="d-none d-sm-inline">Abros Bull</span> Sports Club</a></li>
+            <li><a href="#">Join Us</a></li>
+            <li><a [routerLink]="'/Auth'">Sign In</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+  <nav class="navbar navbar-expand-xl navbar-dark bg-dark">
+    <div class="container">
+      <a class="navbar-brand order-md-1" [routerLink]="'/Home'">
+        <img src="assets/img/brandLogo.png" alt="">
+      </a>
+      <button class="navbar-toggler order-md-3" type="button" (click)="isMenuCollapsed = !isMenuCollapsed">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div [ngbCollapse]="isMenuCollapsed" class="collapse navbar-collapse order-md-4 order-xl-2">
+        <ul class="navbar-nav mx-xl-auto">
+          <li class="nav-item active">
+            <a class="nav-link" [routerLink]="'/Product'" (click)="isMenuCollapsed = true" [class.active] = "activeTab === 'Product'">Women</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" [routerLink]="'/Product'" (click)="isMenuCollapsed = true" [class.active] = "activeTab === 'Product'">Men</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" [routerLink]="'/Product'" (click)="isMenuCollapsed = true" [class.active] = "activeTab === 'Product'">Kid</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" [routerLink]="'/Home'" (click)="isMenuCollapsed = true" [class.active] = "activeTab === 'Home'">Apparels</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" [routerLink]="'/Home'" (click)="isMenuCollapsed = true" [class.active] = "activeTab === 'Home'">Accessories</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" [routerLink]="'/Home'" (click)="isMenuCollapsed = true" [class.active] = "activeTab === 'Home'">Sports Club</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" [routerLink]="'/Home'" (click)="isMenuCollapsed = true" [class.active] = "activeTab === 'Home'">Technology</a>
+          </li>
+        </ul>
+      </div>
+      <div class="userControls order-md-2 order-xl-3">
+        <ul>
+          <li><a href="#"><i class="fas fa-search"></i></a></li>
+          <li><a href="#"><i class="far fa-heart"></i></a></li>
+          <li><a href="#"><i class="fas fa-shopping-bag"></i></a></li>
+          <li><a href="#"><i class="far fa-user"></i></a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+</header>

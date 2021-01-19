@@ -1,0 +1,30 @@
+input[type="radio"], input[type="checkbox"], input[type="radio"]+label::before, input[type="checkbox"]+label::before {
+    width: 1.875rem;
+    height: 1.875rem;
+    top: 0;
+}
+input[type="radio"]+label, input[type="checkbox"]+label {
+    line-height: 1.875;
+    padding-left: 2.75rem;
+    margin-bottom: 0;
+}
+input[type="radio"]+label::before, input[type="checkbox"]+label::before {
+    border-color: #1f2ea2;
+}
+input[type="radio"]:checked+label::before, input[type="checkbox"]:checked+label::before {
+    background-color: #1f2ea2;
+}
+.btnNarrow {
+    flex: 1 0 130px;
+    max-width: 130px;
+    margin-right: 1.875rem;
+}
+form a {
+    text-transform: uppercase;
+    text-decoration: underline;
+    color: #333;
+    line-height: 3.5;
+}
+form a:hover, form a:focus {
+    text-decoration: none;
+}

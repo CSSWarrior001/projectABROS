@@ -1,0 +1,10 @@
+.productDetailGallery {
+    display: flex;
+    flex-wrap: wrap;
+}
+.productDetailGallery > img:first-child {
+    flex:1 0 100%
+}
+.productDetailGallery > .thumbWrapper {
+    flex:1 0 50%
+}

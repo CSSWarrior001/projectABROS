@@ -1,0 +1,45 @@
+h1 {
+    font-size: 2rem;
+    color: #fff
+}
+img {
+    max-width: 634px;
+    width: 100%;
+}
+.bullSportsClub [class^='col-'] {
+    display: flex;
+    align-items: center;
+}
+.bullSportsClubContent {
+    padding-top: 3rem;
+}
+.bullSportsClubGraphic {
+    padding-top: 2rem;
+}
+.genderCategory ul {
+    justify-content: flex-start;
+}
+.genderCategory li {
+    max-width: 136px;
+    margin:0.5rem 1rem 0.5rem 0;
+}
+@media only screen and (min-width: 992px) {
+    .bullSportsClubContent {
+        padding-top: 0rem;
+    }
+}
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+    h1 {
+        font-size: 4rem;
+    }
+}
+@media only screen and (min-width: 768px) and (max-width:991px) {
+    h1 {
+        font-size: 5rem
+    }
+}
+@media only screen and (min-width: 1200px) {
+    h1 {
+        font-size: 5rem
+    }
+}

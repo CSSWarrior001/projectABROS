@@ -1,0 +1,55 @@
+.swiperContent {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+}
+.swiperContent span {
+  font-family: 'ackbarregular';
+  font-size: 3.25rem;
+  color: #fff;
+  line-height: 1;
+  text-align: justify;
+}
+.swiperContent > span > span {
+  font-size: 6.5rem;
+  display: block;
+}
+.swiper-slide {
+  display: flex;
+  justify-content: center;
+  position: relative;
+  z-index: 10;
+}
+.swiper-slide .homeProductWrapper {
+  max-width: 575px;
+  width: 100%;
+  text-align: right;
+  position: relative;
+  z-index: 10;
+}
+swiper {
+  position: relative;
+}
+swiper::after {
+  content: '';
+  width: 100%;
+  max-width: 575px;
+  height: 75px;
+  background-color: rgba(0,0,0,0.22);
+  border-radius: 100%/75px;
+  position: absolute;
+  left: 50%;
+  bottom: calc(3rem + 40px);
+  transform: translateX(-50%);
+  z-index: -1
+}
+@media only screen and (min-width: 1200px) {
+  .swiperContent {
+    max-width: 320px;
+    margin-left: 20%;
+    z-index: 1;
+  }
+}

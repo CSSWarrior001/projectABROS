@@ -1,0 +1,89 @@
+<div class="authentication">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6">
+                <div class="authenticationContent">
+                    <ul ngbNav #nav="ngbNav" [(activeId)]="active" class="nav navTab">
+                        <li [ngbNavItem]="1">
+                          <a ngbNavLink>Login</a>
+                          <ng-template ngbNavContent>
+                            <form>
+                                <div class="form-group">
+                                    <label for="userName" class="sr-only">User Name</label>
+                                    <input type="text" id="userName" name="userName" class="form-control">
+                                </div>
+                                <div class="form-group">
+                                    <label for="userPassword" class="sr-only">Password</label>
+                                    <input type="text" id="userPassword" name="userPassword" class="form-control">
+                                </div>
+                                <div class="form-group">
+                                    <input type="checkbox" id="passwordMemory" name="passwordMemory">
+                                    <label for="passwordMemory">Remember Me</label>
+                                </div>
+                                <div class="d-flex flex-wrap justify-between">
+                                    <button type="submit" class="btn btn-primary btnNarrow">Login</button>
+                                    <a href="/">Forgotten Your Password</a>
+                                </div>
+                            </form>
+                          </ng-template>
+                        </li>
+                        <li [ngbNavItem]="2">
+                          <a ngbNavLink>Create Account</a>
+                          <ng-template ngbNavContent>
+                            <form>
+                                <div class="form-group">
+                                    <label for="newUserFirstName" class="sr-only">First Name*</label>
+                                    <input type="text" name="newUserFirstName" id="newUserFirstName" class="form-control" placeholder="First Name*" required>
+                                </div>
+                                <div class="form-group">
+                                    <label for="newUserLastName" class="sr-only">Last Name*</label>
+                                    <input type="text" name="newUserLastName" id="newUserLastName" class="form-control" placeholder="Last Name*" required>
+                                </div>
+                                <div class="form-group">
+                                    <label for="newUserEmail" class="sr-only">Email*</label>
+                                    <input type="email" id="newUserEmail" name="newUserEmail" class="form-control" placeholder="Email*" required>
+                                </div>
+                                <div class="form-group">
+                                    <label for="newUserPassword" class="sr-only">Password</label>
+                                    <input type="text" id="newUserPassword" name="newUserPassword" class="form-control" placeholder="Password*" required>
+                                </div>
+                                <div class="form-group">
+                                    <input type="checkbox" id="emailSubscription" name="emailSubscription">
+                                    <label for="emailSubscription">Sign Me Up For ABROS Emails</label>
+                                </div>
+                                <div class="d-flex flex-wrap justify-between">
+                                    <button type="submit" class="btn btn-primary w-100">Create Account</button>
+                                </div>
+                            </form>
+                          </ng-template>
+                        </li>
+                      </ul>
+                      <div [ngbNavOutlet]="nav"></div>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="orderContent">
+                    <h5>Check Order / Initiate Return</h5>
+                    <p>See your order even if you are not a registered user. Enter the order number and the billing address ZIP code.</p>
+                    <form>
+                        <div class="form-group">
+                            <label for="orderNumber" class="sr-only">Order Number*</label>
+                            <input type="text" class="form-control" name="orderNumber" id="orderNumber" placeholder="Order Number*" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="orderEmail" class="sr-only">Order Email*</label>
+                            <input type="email" class="form-control" name="orderEmail" id="orderEmail" placeholder="Order Email*" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="orderZipCode" class="sr-only">Order Zip Code*</label>
+                            <input type="text" class="form-control" name="orderZipCode" id="orderZipCode" placeholder="Order Zip Code*" required>
+                        </div>
+                        <div class="d-flex flex-wrap justify-between">
+                            <button type="submit" class="btn btn-primary w-100">Create Account</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
