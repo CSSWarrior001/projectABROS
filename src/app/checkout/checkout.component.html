@@ -1,0 +1,41 @@
+<div class="checkOut">
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-12">
+                <ul ngbNav #nav="ngbNav" [(activeId)]="active" class="nav navTab">
+                    <li [ngbNavItem]="1">
+                      <a ngbNavLink><span>1</span></a>
+                      <ng-template ngbNavContent>
+                        <app-address-detail></app-address-detail>
+                      </ng-template>
+                    </li>
+                    <li [ngbNavItem]="2">
+                      <a ngbNavLink><span>2</span></a>
+                      <ng-template ngbNavContent>
+                        <app-payment-method></app-payment-method>
+                      </ng-template>
+                    </li>
+                    <li [ngbNavItem]="3">
+                        <a ngbNavLink><span>3</span></a>
+                        <ng-template ngbNavContent>
+                          <app-order-review></app-order-review>
+                        </ng-template>
+                    </li>
+                    <li [ngbNavItem]="4">
+                        <a ngbNavLink><span>4</span></a>
+                        <ng-template ngbNavContent>
+                          <app-otp-submission></app-otp-submission>
+                        </ng-template>
+                    </li>
+                    <li [ngbNavItem]="5">
+                        <a ngbNavLink><span>5</span></a>
+                        <ng-template ngbNavContent>
+                          <app-order-summary></app-order-summary>
+                        </ng-template>
+                    </li>
+                  </ul>
+                  <div [ngbNavOutlet]="nav"></div>
+            </div>
+        </div>
+    </div>
+</div>

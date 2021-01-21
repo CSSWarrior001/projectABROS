@@ -1,0 +1,26 @@
+.orderDetailStacked {
+    border-bottom: 1px solid #d9d9d9;
+    margin-bottom: 1.5rem;
+}
+.saveDetails h6 {
+    padding-bottom: 0;
+    border-bottom: none;
+    margin-bottom: 1rem;
+}
+.saveDetails .btn {
+    padding: 1rem;
+    height: calc(1.5em + 2rem + 2px);
+    border-radius: 0.25rem;
+}
+@media only screen and (min-width: 768px) {
+    .checkOutStepList {
+        display: flex;
+        flex-wrap: wrap;
+        margin: 0 -15px
+    }
+    .checkOutStepList li {
+        flex:1 0 calc(50% - 30px);
+        margin-left: 15px;
+        margin-right: 15px;
+    }
+}

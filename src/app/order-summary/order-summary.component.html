@@ -1,0 +1,164 @@
+<div class="orderSummary">
+    <div class="row">
+        <div class="col-md-6 d-flex">
+            <div class="thankYouCard">
+                <div>
+                    <h3>Thank You <br> For Your Order</h3>
+                    <h5>Order Number: 4062453798572</h5>
+                    <p>Your Order is processing. You will receive an email confirmation  shortly at <span>shrinaths@gmail.com</span></p>
+                    <a href="#" class="btn btn-primary">View More</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-6">
+            <h5>Order Details</h5>
+            <div class="purchaseSummary">
+                <div class="row">
+                    <div class="col-sm-6">
+                        <h6>Abros Performance Falcon women Shoes (EG8609)</h6>
+                        <div  class="productPrice">
+                            <span class="currentPrice">
+                                <i class="fas fa-rupee-sign" aria-hidden="true"></i> 
+                                7500
+                            </span>
+                            <span class="oldPrice">
+                                <del>
+                                    <i class="fas fa-rupee-sign" aria-hidden="true"></i> 
+                                    9500
+                                </del>
+                            </span>
+                            <span >Prices include GST</span>
+                        </div>
+                    </div>
+                    <div class="col-sm-6">
+                        <img src="assets/img/selectedProduct.jpg" alt="" class="img-fluid w-100">
+                    </div>
+                </div>
+                <div class="productProperties">
+                    <table class="table table-borderless">
+                        <tbody>
+                            <tr>
+                                <td>Color</td>
+                                <td><button class="darkBrown">&nbsp;</button></td>
+                            </tr>
+                            <tr>
+                                <td>Size</td>
+                                <td>11</td>
+                            </tr>
+                            <tr>
+                                <td>Qty</td>
+                                <td>2</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div class="productProperties orderProperties">
+                    <table class="table table-borderless">
+                        <tbody>
+                            <tr>
+                                <td>Order Numer</td>
+                                <td>: 4062453798572</td>
+                            </tr>
+                            <tr>
+                                <td>Order Date</td>
+                                <td>: January 15 2021</td>
+                            </tr>
+                            <tr>
+                                <td>Status</td>
+                                <td>: Ordered</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-sm-12">
+            <div class="orderDetailStacked">
+                <ul class="checkOutStepList">
+                    <li>
+                        <h6>1. Addresses</h6>
+                        <div class="addressList">
+                           <div>
+                                <div>
+                                    <p><strong>Shipping Address:</strong> Shrinaths,<br>164 P.h.kataria Marg, Mahim<br>Mumbai, Maharashtra, 400016</p>
+                                </div>
+                                <div>
+                                    <p><strong>Shipping Method:</strong> Standard: 0<br>Shrinaths,<br>164 P.h.kataria Marg, Mahim<br>Mumbai, Maharashtra, 400016</p>
+                                </div>
+                           </div>
+                        </div>
+                        <div class="addressList">
+                            <div>
+                                 <div>
+                                     <p><strong>Billing Address:</strong> Shrinaths,<br>164 P.h.kataria Marg, Mahim<br>Mumbai, Maharashtra, 400016</p>
+                                 </div>
+                                 <div>
+                                     <p><strong>Contact Info:</strong>shrinaths@gmail.com<br>+91-70000000700<br>+91-70000000700</p>
+                                 </div>
+                            </div>
+                         </div>
+                    </li>
+                    <li>
+                        <h6>2. Pay</h6>
+                        <div>
+                            <h6>Payment Method</h6>
+                            <p class="text-uppercase">Cash On Delivery</p>
+                            <p>Amount &#8377; 7,500/-</p>
+                            <table class="table table-borderless orderSummaryTable">
+                                <tbody>
+                                    <tr>
+                                        <td>Subtotal</td>
+                                        <td>&#8377; 7,500/-</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Shipping Cost</td>
+                                        <td>&#8377; 0/-</td>
+                                    </tr>
+                                    <tr>
+                                        <td><span class="leadText">Grand Total</span></td>
+                                        <td><span class="leadText">&#8377; 7,500/-</span></td>
+                                    </tr>
+                                    <tr>
+                                        <td>You Save <span class="text-danger">(&#8377; 2,000/-)</span></td>
+                                        <td><del><span class="text-danger">(&#8377; 2,000/-)</span></del> <small>(Prices Includes GST)</small></td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="saveDetails">
+        <div class="row">
+            <div class="col-sm-12">
+                <h6>Save Your Information For Next Time</h6>
+                <form>
+                    <div class="row">
+                        <div class="col-md-4">
+                            <div class="form-group">
+                                <label for="passwordCreation" class="sr-only">Create Password</label>
+                                <input type="password" name="passwordCreation" id="passwordCreation" placeholder="Create Password" class="form-control">
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="form-group">
+                                <label for="passwordConfirmation" class="sr-only">Confirm Password</label>
+                                <input type="password" name="passwordConfirmation" id="passwordConfirmation" placeholder="Confirm Password" class="form-control">
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="form-group">
+                                <button class="btn btn-primary w-100" type="submit">Create Account</button>
+                            </div>
+                        </div>
+                    </div>
+                </form>
+                <p>Already Have An Account? <a [routerLink]="'/Auth'" class="text-uppercase">Sign In</a></p>
+            </div>
+        </div>
+    </div>
+</div>

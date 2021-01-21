@@ -30,7 +30,7 @@
 .swiper-wrapper {
   box-sizing: border-box;
 }
-#header ul, #footer ul, .socialMediaSticky ul, .genderCategory ul, .product ul, .productDetail ul {
+#header ul, #footer ul, .socialMediaSticky ul, .genderCategory ul, .product ul, .productDetail ul, .checkOutStepList {
   list-style: none;
   padding: 0;
   margin: 0;
@@ -38,9 +38,16 @@
 #header a:hover, #footer a:hover {
   text-decoration: none;
 }
-.form-control {
+.form-control, .custom-select {
   padding: 1.125rem 1rem;
   height: calc(1.5em + 2.25rem + 2px);
+  text-transform: uppercase;
+}
+.custom-select {
+  padding-right: 2rem;
+}
+.custom-select option {
+  text-transform: uppercase;
 }
 #footer .form-control {
   border-radius: 0;
@@ -168,6 +175,18 @@
 .form-group {
   position: relative;
 }
+legend {
+  font-size: 1.125rem;
+  font-weight: 500;
+  text-transform: uppercase;
+  line-height: 1.5;
+  margin-bottom: 0.75rem;
+}
+input[type="number"] {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
 input[type="radio"]+label::before {
   border-radius: 50%;
 }
@@ -198,6 +217,15 @@ input[type="radio"]+label, input[type="checkbox"]+label {
 }
 input[type="radio"]:checked+label::before, input[type="checkbox"]:checked+label::before {
   background-color: #fec52d;
+}
+.btn-outline-dark {
+  border-radius: 0.25rem;
+  border-color: #d9d9d9;
+}
+.btn-outline-dark:hover, .btn-outline-dark:focus {
+  background-color: #fff;
+  border-color: #000;
+  color: #333
 }
 .ng5-slider .ng5-slider-pointer {
   width: 16px !important;
@@ -313,7 +341,7 @@ input[type="radio"]:checked+label::before, input[type="checkbox"]:checked+label:
   #footer .form-control {
     border-color: transparent;
   }
-  .form-control:focus {
+  .form-control:focus, .custom-select:focus {
     border-color: #000;
   }
   .btn-light, .instaGalleryControls .btn.btn-dark:hover, .instaGalleryControls .btn.btn-dark:focus, .instaGalleryControls .btn.btn-dark:active {
@@ -968,7 +996,7 @@ input[type="radio"]:checked+label::before, input[type="checkbox"]:checked+label:
 .userControl {
   justify-content: space-between;
 }
-.userSelection button {
+.userSelection button, .productProperties table button {
   width: 24px;
   height: 24px;
   border: none;
@@ -1260,6 +1288,244 @@ input[type="radio"]:checked+label::before, input[type="checkbox"]:checked+label:
   max-width: 460px;
   margin: 0 auto 2rem;
 }
+.checkOut {
+  padding: 3rem 0 2rem;
+}
+.checkOut .navTab li {
+  flex: 1 0 20%;
+  text-align: center;
+}
+.checkOut .navTab li a {
+  padding-top: 0;
+}
+.checkOut .navTab li a span {
+  width: 40px;
+  height: 40px;
+  display: inline-flex;
+  border-radius: 50%;
+  background-color: #333;
+  color: #fec52d;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+.checkOut h5, .checkOut h6 {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 500;
+  padding-bottom: 1.5rem;
+  margin-bottom: 1.5rem;
+  border-bottom: 1px solid #d9d9d9;
+}
+.checkOut h5 {
+  font-size: 1.5rem;
+  line-height: 1;
+}
+.checkOut h6 {
+  line-height: 1.5;
+}
+.checkOutStepList li h6 {
+  font-size: 1.125rem;
+  line-height: 1;
+  padding:1.5rem;
+  background-color: #d9d9d9;
+  text-transform: uppercase;
+  font-weight: 500;
+  border-bottom: none;
+  margin-bottom: 1rem;
+}
+.checkOut form p {
+  font-size: 0.875rem;
+}
+.checkOut form p a {
+  color: #333
+}
+.checkOut input[type="radio"]+label::before, .checkOut input[type="checkbox"]+label::before {
+  border-color: #1f2ea2;
+}
+.checkOut input[type="radio"]:checked+label::before, .checkOut input[type="checkbox"]:checked+label::before {
+  background-color: #1f2ea2;
+}
+.checkOutStepList li form h6, .checkOutStepList li div h6 {
+  font-size: 1.125rem;
+  line-height: 1;
+  background-color: transparent;
+  padding: 0;
+  margin-bottom: 1rem;
+}
+.addressList {
+  border-bottom: 1px solid #d9d9d9;
+  margin-bottom: 1rem;
+}
+.addressList span, .addressList strong {
+  display: block;
+}
+.addressList > div {
+  display: flex;
+  flex-wrap: wrap;
+  margin:0 -0.5rem;
+}
+.addressList > div > div {
+  flex: 1 0 270px;
+  padding:0 0.5rem;
+}
+.addressList:last-of-type {
+  border-bottom: none;
+  margin-bottom: 0;
+}
+.checkOutStepList a {
+  color: #333;
+  text-decoration: underline;
+}
+.checkOutStepList a:hover, .checkOutStepList a:focus {
+  text-decoration: none;
+}
+.modal-header {
+  text-align: center;
+  justify-content: center;
+  padding-bottom: 0;
+  border-bottom: none;
+}
+.modal h6 {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 500;
+  text-align: center;
+  text-transform: capitalize;
+}
+.modal h6 span {
+  font-weight: 400;
+  display: block;
+}
+.passwordControl {
+  margin:0 -0.5rem
+}
+.passwordControl .btn {
+  margin: 0 0.5rem;
+  flex: 1 0 calc(50% - 1rem)
+}
+.modal .form-control {
+  padding:0.875rem 1rem;
+  height: calc(1.5em + 1.75rem + 2px);
+}
+.modal .form-control, .modal .form-control:focus {
+  border-color: #d9d9d9;
+}
+.checkOut .selectedProductWrapper h6, .checkOut .purchaseSummary h6 {
+  font-family: 'Oswald', sans-serif;
+  font-size: 1.25rem;
+  font-weight: 700;
+  border-bottom: none;
+  padding-bottom: 0;
+  margin-bottom: 0.5rem;
+}
+.selectedProductWrapper {
+  margin-bottom: 1rem;
+  border-bottom: 1px solid #d9d9d9;
+}
+.orderSummaryTable {
+  font-weight: 500;
+  text-transform: uppercase;
+}
+.orderSummaryTable .leadText {
+  font-size: 1.5rem;
+}
+.orderSummaryTable > tbody > tr > td:last-child {
+  text-align: right;
+}
+.orderSummaryTable > tbody > tr > td {
+  padding: 0;
+}
+.orderSummaryTable small {
+  font-size: 0.625rem;
+  font-weight: 400;
+  display: block;
+}
+.selectedProductControl {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 -0.25rem;
+}
+.selectedProductControl .custom-select, .selectedProductControl .form-control {
+  text-align: left;
+}
+.selectedProductControl .dropdown-toggle::after {
+  display: none;
+}
+.selectedProductControl .btn, .selectedProductControl .custom-select, .selectedProductControl .form-control {
+  padding-top: 0.75rem;
+  padding-bottom: 0.75rem;
+  height: calc(1.5em + 1.5rem + 2px);
+}
+.selectedProductControl .btn {
+  padding-top: 0.65rem;
+  padding-bottom: 0.65rem;
+  height: calc(1.5em + 1.3rem + 2px);
+}
+.selectedProductControl > div {
+  flex: 1 0 120px;
+  margin: 0 0.25rem 1rem;
+  position: relative;
+}
+.selectedProductWrapper .dropdown-menu {
+  padding: 0.5rem;
+  min-width: 0px;
+  width: 100%;
+  box-shadow: 0 0 2px rgba(0,0,0,0.2);
+}
+.promoCode h5 {
+  border-bottom: none;
+  padding-bottom: 0;
+  margin-bottom: 1rem;
+  padding-top: 0.5rem;
+}
+.thankYouCard {
+  background:#fec52d url(assets/img/brandIcon.png) center center / contain no-repeat;
+  flex:1 0 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding:3rem 1rem;
+  margin-bottom: 1.5rem;
+}
+.thankYouCard > div {
+  max-width: 380px;
+  width: 100%;
+}
+.thankYouCard h5 {
+  border-bottom: none;
+  padding-bottom: 0;
+  margin-bottom: 1rem;
+}
+.purchaseSummary {
+  margin-bottom: 1.5rem;
+}
+.purchaseSummary img {
+  margin-bottom: 1rem;
+}
+.productProperties {
+  border-bottom: 1px solid #d9d9d9;
+  margin-bottom: 1rem;
+}
+.productProperties table {
+  text-transform: uppercase;
+}
+.productProperties table > tbody > tr > td {
+  padding:0.25rem 0;
+}
+.productProperties table > tbody > tr > td:first-child {
+  width: 125px;
+  font-weight: 500;
+}
+.productProperties table button {
+  margin-left: 0;
+}
+.orderProperties {
+  border-bottom: none;
+  margin-bottom: 0;
+}
+.orderProperties table > tbody > tr:last-child > td {
+  padding-bottom: 0;
+}
 /*
 5.) Media Query Conditions
 =========================================================*/
@@ -1381,6 +1647,9 @@ input[type="radio"]:checked+label::before, input[type="checkbox"]:checked+label:
   }
   .product aside form {
     margin-bottom: 0rem;
+  }
+  .selectedProductControl > div:last-child {
+    flex:1 1 50px;
   }
 }
 @media only screen and (min-width: 1200px) {

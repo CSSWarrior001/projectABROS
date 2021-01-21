@@ -1,0 +1,6 @@
+input+label {
+    text-transform: uppercase;
+}
+input+label span {
+    text-transform: none;
+}

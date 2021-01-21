@@ -1,0 +1,71 @@
+<ng-template #content let-modal>
+    <div class="modal-header">
+      <h6 class="modal-title" id="modal-basic-title">OTP is successfully sent to your mobile number <span>+91-7000000700</span></h6>
+    </div>
+    <div class="modal-body">
+      <form>
+          <div class="form-group">
+              <label for="otpInput" class="sr-only">Enter OTP Number</label>
+              <input type="text" name="otpInput" id="otpInput" placeholder="Enter OTP Number" class="form-control" required>
+            </div>
+            <div class="d-flex passwordControl">
+                <button type="submit" class="btn btn-primary" (click)="modal.close('Save click')">Confirm</button>
+                <button type="button" class="btn btn-primary" (click)="modal.close('Save click')">Resend OTP</button>
+            </div>
+      </form>
+    </div>
+</ng-template>
+<div class="otpSubmission">
+    <div class="row">
+        <div class="col-sm-12">
+            <div class="row">
+                <div class="col-md-6 order-2 order-md-1">
+                    <ul class="checkOutStepList">
+                        <li>
+                            <h6>1. Addresses</h6>
+                            <div class="addressList">
+                               <div>
+                                    <div>
+                                        <p><strong>Shipping Address:</strong> Shrinaths,<br>164 P.h.kataria Marg, Mahim<br>Mumbai, Maharashtra, 400016</p>
+                                    </div>
+                                    <div>
+                                        <p><strong>Shipping Method:</strong> Standard: 0<br>Shrinaths,<br>164 P.h.kataria Marg, Mahim<br>Mumbai, Maharashtra, 400016</p>
+                                    </div>
+                               </div>
+                            </div>
+                            <div class="addressList">
+                                <div>
+                                     <div>
+                                         <p><strong>Billing Address:</strong> Shrinaths,<br>164 P.h.kataria Marg, Mahim<br>Mumbai, Maharashtra, 400016</p>
+                                     </div>
+                                     <div>
+                                         <p><strong>Contact Info:</strong>shrinaths@gmail.com<br>+91-70000000700<br>+91-70000000700</p>
+                                     </div>
+                                </div>
+                             </div>
+                        </li>
+                        <li>
+                            <h6>2. Pay</h6>
+                            <div>
+                                <h6>Payment Method</h6>
+                                <p>&#8377; 7,500/-</p>
+                            </div>
+                        </li>
+                        <li>
+                            <h6>3. Review</h6>
+                            <div>
+                                <p>Please review your information is accurate. Your order will not be placed until you click “Place Order”</p>
+                                <h6>Order Total &#8377; 7,500/-</h6>
+                                <button class="btn btn-primary w-100 mb-3" (click)="open(content)">Place Order</button>
+                                <p>By submitting my order, I confirm that I have read and accept the <strong><a href="#">Terms and Conditions</a></strong> and the <strong><a href="#">Privacy Policy</a></strong></p>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-md-6 order-1 order-md-2">
+                    <app-order-detail></app-order-detail>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

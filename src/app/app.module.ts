@@ -21,6 +21,13 @@ import { FilterAccordionComponent } from './filter-accordion/filter-accordion.co
 import { ProductDetailGalleryComponent } from './product-detail-gallery/product-detail-gallery.component';
 import { BullSportsClubComponent } from './bull-sports-club/bull-sports-club.component';
 import { AuthComponent } from './auth/auth.component';
+import { CheckoutComponent } from './checkout/checkout.component';
+import { AddressDetailComponent } from './address-detail/address-detail.component';
+import { PaymentMethodComponent } from './payment-method/payment-method.component';
+import { OrderReviewComponent } from './order-review/order-review.component';
+import { OrderDetailComponent } from './order-detail/order-detail.component';
+import { OtpSubmissionComponent } from './otp-submission/otp-submission.component';
+import { OrderSummaryComponent } from './order-summary/order-summary.component';
 
 @NgModule({
   declarations: [
@@ -38,7 +45,14 @@ import { AuthComponent } from './auth/auth.component';
     FilterAccordionComponent,
     ProductDetailGalleryComponent,
     BullSportsClubComponent,
-    AuthComponent
+    AuthComponent,
+    CheckoutComponent,
+    AddressDetailComponent,
+    PaymentMethodComponent,
+    OrderReviewComponent,
+    OrderDetailComponent,
+    OtpSubmissionComponent,
+    OrderSummaryComponent
   ],
   imports: [
     BrowserModule,

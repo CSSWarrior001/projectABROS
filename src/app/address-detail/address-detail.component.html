@@ -1,0 +1,114 @@
+<div class="addressDetail">
+    <div class="row">
+        <div class="col-sm-12">
+            <div class="row">
+                <div class="col-md-6 order-2 order-md-1">
+                    <h6><a [routerLink]="'/Auth'">Login</a> For Faster Checkout Experience</h6>
+                    <ul class="checkOutStepList">
+                        <li>
+                            <h6>1. Addresses</h6>
+                            <form>
+                                <fieldset>
+                                    <div class="form-group">
+                                        <label for="firstName" class="sr-only">First Name *</label>
+                                        <input type="text" class="form-control" name="firstName" id="firstName" placeholder="First Name *" required>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="lastName" class="sr-only">Last Name *</label>
+                                        <input type="text" class="form-control" name="lastName" id="lastName" placeholder="Last Name *" required>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="postCode" class="sr-only">Post Code *</label>
+                                        <input type="text" class="form-control" name="postCode" id="postCode" placeholder="Post Code *" required>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="addressFirst" class="sr-only">Address 1 *</label>
+                                        <input type="text" class="form-control" name="addressFirst" id="addressFirst" placeholder="Address 1 *" required>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="addressSecond" class="sr-only">Address 2 *</label>
+                                        <input type="text" class="form-control" name="addressSecond" id="addressSecond" placeholder="Address 2 *" required>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="cityName" class="sr-only">City *</label>
+                                        <input type="text" class="form-control" name="cityName" id="cityName" placeholder="City *" required>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="stateName" class="sr-only">State*</label>
+                                        <select name="stateName" id="stateName" class="custom-select">
+                                            <option value="0">State *</option>
+                                            <option value="1">1</option>
+                                            <option value="2">2</option>
+                                            <option value="3">3</option>
+                                        </select>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="countryName" class="sr-only">Country *</label>
+                                        <select name="countryName" id="countryName" class="custom-select">
+                                            <option value="0">Country *</option>
+                                            <option value="1">1</option>
+                                            <option value="2">2</option>
+                                            <option value="3">3</option>
+                                        </select>
+                                    </div>
+                                </fieldset>
+                                <fieldset>
+                                    <legend>Enter contact info (for order invoice)</legend>
+                                    <div class="form-group">
+                                        <label for="" class="sr-only">Email *</label>
+                                        <input type="email" class="form-control" name="" id="" placeholder="Email *" required>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="" class="sr-only">Confirm Email *</label>
+                                        <input type="email" class="form-control" name="" id="" placeholder="Confirm Email *" required>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="" class="sr-only">Phone *</label>
+                                        <input type="tel" class="form-control" name="" id="" placeholder="Phone *" required>
+                                    </div>
+                                    <div class="form-group mb-4">
+                                        <label for="" class="sr-only">Alternate Number</label>
+                                        <input type="tel" class="form-control" name="" id="" placeholder="Alternate Number">
+                                    </div>
+                                    <h6>Select A Shipping Method</h6>
+                                    <h6>Enter A Billing Address</h6>
+                                    <div class="form-group">
+                                        <input type="checkbox" name="addressComparison" id="addressComparison">
+                                        <label for="addressComparison">Billing And Shipping Details Are Same</label>
+                                    </div>
+                                </fieldset>
+                                <div class="form-group">
+                                    <button type="submit" class="btn btn-primary w-100">Continue to payment method</button>
+                                </div>
+                                <p>With the continuation of your order your personal data will be forwarded to infoscore Consumer Data GmbH for risk and credit checks. Further information can be accessed in our privacy policy. <strong><a href="#">privacy policy</a></strong></p>
+                            </form>
+                        </li>
+                        <li>
+                            <h6>2. Pay</h6>
+                        </li>
+                        <li>
+                            <h6>3. Review</h6>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-md-6 order-1 order-md-2">
+                    <app-order-detail></app-order-detail>
+                    <div class="promoCode mb-4">
+                        <div class="row">
+                            <div class="col-sm-12">
+                                <h5>Apply A Promo Code</h5>
+                                <form>
+                                    <div class="form-group mb-4">
+                                        <label for="promoCode" class="sr-only">Enter Promo Code</label>
+                                        <input type="text" name="promoCode" id="promoCode" placeholder="Enter Promo Code" class="form-control">
+                                    </div>
+                                    <button class="btn btn-primary w-100">Apply Now</button>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

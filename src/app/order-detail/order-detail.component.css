@@ -1,0 +1,15 @@
+ul {
+    padding: 0;
+    margin: 0 -2px;
+}
+.selectionPallete {
+    justify-content: space-between;
+}
+.selectionPallete li {
+    flex:1 0 36px;
+    max-width: none;
+    margin: 2px;
+}
+.selectionPallete label {
+    height: 36px;
+}
