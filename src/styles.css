@@ -1526,6 +1526,69 @@ input[type="radio"]:checked+label::before, input[type="checkbox"]:checked+label:
 .orderProperties table > tbody > tr:last-child > td {
   padding-bottom: 0;
 }
+.faqs {
+  padding:3rem 0 2rem;
+}
+.faqContent h5, .faqContent .btn, .faqContent .card-body {
+  padding:0 0 1rem;
+  margin-bottom: 1rem;
+  border-bottom: 1px solid #d9d9d9;
+}
+.faqContent .card-body {
+  padding: 0;
+}
+.faqContent h5 {
+  font-size: 1.75rem;
+  padding-top: 1.5rem;
+}
+.faqContent .btn {
+  font-size: 1rem;
+  text-transform: none;
+}
+.faqContent .btn::after {
+  top: 6px;
+  transform: translateY(0);
+}
+.faqCardWrapper {
+  text-align: center;
+}
+.faqCardWrapper h5 {
+  font-size: 1.75rem;
+  margin-bottom: 3rem;
+}
+.faqCard {
+  background-color: #fff;
+  border:1px solid #d9d9d9;
+  margin-bottom: 1.5rem;
+  padding: 2.25rem;
+  flex: 1 0 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.faqs {
+  color: #666;
+}
+.faqs h5, .faqs .btn {
+  color: #333
+}
+.faqCard i {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+  color: #1f2d9f;
+}
+.faqCard span {
+  color: #666;
+}
+.faqCard:hover, .faqCard:focus {
+  background-color: #1f2d9f;
+  border-color: #fff;
+  text-decoration: none;
+}
+.faqCard:hover > *, .faqCard:focus > * {
+  color: #fff;
+}
 /*
 5.) Media Query Conditions
 =========================================================*/

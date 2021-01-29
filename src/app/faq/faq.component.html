@@ -1,0 +1,512 @@
+<div class="faqs">
+    <div class="container">
+        <div class="row faqCardWrapper">
+            <div class="col-sm-12">
+                <h5>Frequently Asked Questions</h5>
+                <div class="row">
+                    <div class="col-sm-6 col-lg-4 col-xl-3 d-flex">
+                        <a href="#" class="faqCard">
+                            <i class="fas fa-shopping-cart"></i> 
+                            <span>Orders</span>
+                        </a>
+                    </div>
+                    <div class="col-sm-6 col-lg-4 col-xl-3 d-flex">
+                        <a href="#" class="faqCard">
+                            <i class="fas fa-credit-card"></i> 
+                            <span>Payments</span>
+                        </a>
+                    </div>
+                    <div class="col-sm-6 col-lg-4 col-xl-3 d-flex">
+                        <a href="#" class="faqCard">
+                            <i class="fas fa-shipping-fast"></i> 
+                            <span>Delivery</span>
+                        </a>
+                    </div>
+                    <div class="col-sm-6 col-lg-4 col-xl-3 d-flex">
+                        <a href="#" class="faqCard">
+                            <i class="fas fa-reply"></i> 
+                            <span>Return And Cancellation</span>
+                        </a>
+                    </div>
+                    <div class="col-sm-6 col-lg-4 col-xl-3 d-flex">
+                        <a href="#" class="faqCard">
+                            <i class="fas fa-user"></i> 
+                            <span>Account</span>
+                        </a>
+                    </div>
+                    <div class="col-sm-6 col-lg-4 col-xl-3 d-flex">
+                        <a href="#" class="faqCard">
+                            <i class="fab fa-product-hunt"></i> 
+                            <span>Products</span>
+                        </a>
+                    </div>
+                    <div class="col-sm-6 col-lg-4 col-xl-3 d-flex">
+                        <a href="#" class="faqCard">
+                            <i class="fas fa-gift"></i> 
+                            <span>Promotions And Vouchers</span>
+                        </a>
+                    </div>
+                    <div class="col-sm-6 col-lg-4 col-xl-3 d-flex">
+                        <a href="#" class="faqCard">
+                            <i class="fas fa-store-alt"></i> 
+                            <span>Stores</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-sm-12">
+                <div class="faqContent" id="orders">
+                    <h5>Orders</h5>
+                    <ngb-accordion [closeOthers]="true" activeIds="ordersQuestion-1">
+                        <ngb-panel id="ordersQuestion-1" title="How do I place an order ?">
+                            <ng-template ngbPanelContent>
+                                <p>To place your order, follow the steps mentioned below:</p>
+                                <ul>
+                                    <li>Browse by article of your choice</li>
+                                    <li>View details of the product, select your size and add to "cart"</li>
+                                    <li>Create an account or you may proceed as a guest user</li>
+                                    <li>Enter your shipping address with pin code</li>
+                                    <li>Please make sure that you check the total amount and products added to your cart before proceeding.</li> 
+                                    <li>Next, select the payment option. (Net-Banking/Debit/Credit Card/Wallets or COD)</li>
+                                    <li>To complete the online payment, you will be redirected to our online payment partner payU Money. For COD, you will need to confirm the order by entering the OTP received on your mobile.</li>
+                                </ul>
+                                <p>Once your payment is confirmed, your order will be placed successfully. You will receive a confirmation SMS & Email with your order details.</p>
+                            </ng-template>
+                        </ngb-panel>
+                        <ngb-panel id="ordersQuestion-2" title="Can I add item or change size after placing an order? ">
+                            <ng-template ngbPanelContent>
+                                <p>Currently we do not have option where a customer can change the size or add new item to a purchased order. Instead, a new order can be placed. </p>
+                            </ng-template>
+                        </ngb-panel>
+                        <ngb-panel id="ordersQuestion-3" title="Can I change my delivery address after I have placed an order? ">
+                            <ng-template ngbPanelContent>
+                                <p>The shipping address cannot be changed once the order is confirmed.</p>
+                            </ng-template>
+                        </ngb-panel>
+                        <ngb-panel id="ordersQuestion-4" title="What emails can I expect once my order has been placed ?">
+                            <ng-template ngbPanelContent>
+                                <p>As soon as the order is confirmed, you will receive two emails: </p>
+                                <ul>
+                                    <li>A mail confirming that the order has been shipped.</li>
+                                    <li>A mail confirming that you have received the order.</li>
+                                </ul>
+                            </ng-template>
+                        </ngb-panel>
+                        <ngb-panel id="ordersQuestion-5" title="What taxes will be levied on the transactions ?">
+                            <ng-template ngbPanelContent>
+                                <p>All our prices are inclusive of sales tax. Sales Tax is calculated based on the GST laws.</p>
+                            </ng-template>
+                        </ngb-panel>
+                        <ngb-panel id="ordersQuestion-6" title="Are there any shipping charges ?">
+                            <ng-template ngbPanelContent>
+                                <p>There are no shipping charges.</p>
+                            </ng-template>
+                        </ngb-panel>
+                        <ngb-panel id="ordersQuestion-7" title="Do you deliver anywhere in India?">
+                            <ng-template ngbPanelContent>
+                                <p>We deliver to most cities in India</p>
+                                <p>Please note: Currently we are not shipping internationally.</p>
+                            </ng-template>
+                        </ngb-panel>
+                        <ngb-panel id="ordersQuestion-8" title="How do I find the product I'm looking for on the website?">
+                            <ng-template ngbPanelContent>
+                                <p>You can find our products on our site through a simple search. Either enter the product name or article number in the search bar on the top right of the page or click on Select -> Collections on the navigation menu. After completing the search, you can add the selected articles you want by clicking on the option ‘Add To Cart'. </p>
+                            </ng-template>
+                        </ngb-panel>
+                        <ngb-panel id="ordersQuestion-9" title="Do I need to create an account to buy from your online shop?">
+                            <ng-template ngbPanelContent>
+                                <p>No, it is not mandatory to create an account in order to shop on puma.com. You can do so as a guest user. However, you will have to share your email ID.</p>
+                                <p>However, creating an account can save you time during checkout as it saves your address details. </p>
+                            </ng-template>
+                        </ngb-panel>
+                        <ngb-panel id="ordersQuestion-10" title="What online platforms can I buy PUMA products from?">
+                            <ng-template ngbPanelContent>
+                                <p>You can buy PUMA products from the following online platforms:</p>
+                                <p>Myntra </p>
+                                <ul>
+                                    <li>Abros Shoes India Pvt. Ltd.</li>
+                                    <li>Unistand</li>
+                                </ul>
+                                <p>Amazon</p>
+                                <ul>
+                                    <li>Abros Shoes India Pvt. Ltd.</li>
+                                    <li>Cloud Tail</li>
+                                </ul>
+                                <p>FlipKart</p>
+                                <ul>
+                                    <li>Abros Shoes India Pvt. Ltd.</li>
+                                    <li>Retailnet</li>
+                                </ul>
+                                <p>PayTm</p>
+                                <ul>
+                                    <li>Abros Shoes India Pvt. Ltd.</li>
+                                    <li></li>
+                                </ul>
+                                <p>TataCliq, AJIO, Koovs, Nykaa, Nykaa Fashion</p>
+                            </ng-template>
+                        </ngb-panel>
+                    </ngb-accordion>
+                </div>
+
+                <div  class="faqContent" id="payment">
+                    <h5>Payment</h5>
+                    <ngb-accordion [closeOthers]="true">
+                        <ngb-panel id="paymentQuestion-1" title="Which payment methods do you accept?">
+                            <ng-template ngbPanelContent>
+                                <p>We accept the following modes of payment:</p>
+                                <ul>
+                                    <li>Credit Cards</li>
+                                    <li>Debit Cards</li>
+                                    <li>Internet Banking</li>
+                                    <li>COD</li>
+                                    <li>Payment Wallets</li>
+                                </ul>
+                                <p>Please note: As of now we do not accept international cards </p>
+                            </ng-template>
+                        </ngb-panel>
+                        <ngb-panel id="paymentQuestion-2" title="How can I avail COD payment mode?">
+                            <ng-template ngbPanelContent>
+                                <p>To avail the COD payment mode, select 'Cash on delivery' on the payment page while placing an order.</p>
+                            </ng-template>
+                        </ngb-panel>
+                        <ngb-panel id="paymentQuestion-3" title="How do I know if I am eligible for COD payment?">
+                            <ng-template ngbPanelContent>
+                                <p>By Default, all users are eligible for COD orders for a cart value below 9999/- INR</p>
+                            </ng-template>
+                        </ngb-panel>
+                        <ngb-panel id="paymentQuestion-4" title="Is there any limit on COD order?">
+                            <ng-template ngbPanelContent>
+                                <p>Yes, there is a limit. For any orders below Rs.10000, you can select COD as the mode of payment.</p>
+                            </ng-template>
+                        </ngb-panel>
+                        <ngb-panel id="paymentQuestion-5" title="Are there any additional charges on COD purchase ?">
+                            <ng-template ngbPanelContent>
+                                <p>There are no additional charges if you select COD as the mode of payment.</p>
+                            </ng-template>
+                        </ngb-panel>
+                        <ngb-panel id="paymentQuestion-6" title="What if the money is debited from my account and the transaction is not successful?">
+                            <ng-template ngbPanelContent>
+                                <p>In case, money is debited from your account and the transaction is not successful, please wait 24 hours for the money to be credited back to your account.</p>
+                                <p>If the money is not credited back to your account even after 24 hours, then kindly email/call us with below details: </p>
+                                <ul>
+                                    <li>Transaction ID</li>
+                                    <li>Order Date and amount</li>
+                                    <li>Bank name and payment gateway</li>
+                                    <li>Customer Name and Contact number</li>
+                                </ul>
+                                <p>If the payment is received at our end, the order will be confirmed post reconciliation. If not, we will initiate the refund to your account within 2 working days from our payment gateway incase the order has failed due to an issue at our end. The refunded amount will reflect in your bank account within 5-7 working days. </p>
+                            </ng-template>
+                        </ngb-panel>
+                    </ngb-accordion>
+                </div>
+
+                <div  class="faqContent" id="delivery">
+                    <h5>Delivery</h5>
+                    <ngb-accordion [closeOthers]="true">
+                        <ngb-panel id="deliveryQuestion-1" title="How do I check my order or delivery status?">
+                            <ng-template ngbPanelContent>
+                                <p>If you'd like to track your order, you can receive latest information on order status by following the steps mentioned below. If you're not registered with us, or purchased as a guest, you'll need to enter your order number (from your Order Confirmation email) along with the email address & Zip Code to track the order. </p>
+                                <p>Registered Users:</p>
+                                <ul>
+                                    <li>Login to your account - <a [routerLink]="['/Auth']">Login</a></li>
+                                    <li>Click on View Order History</li>
+                                    <li>Click on the tracking number against the specific order</li>
+                                    <li>Or Click Here <a [routerLink]="['/']">Check Status</a></li>
+                                </ul>
+                                <p>Not registered? </p>
+                                <ul>
+                                    <li>Visit Login Page → Check Order→ Enter details to track your order</li>
+                                    <li>Click here <a [routerLink]="['/Auth']">Login</a></li>
+                                </ul>
+                            </ng-template>
+                        </ngb-panel>
+                        <ngb-panel id="deliveryQuestion-2" title="What stages does my order go through?">
+                            <ng-template ngbPanelContent>
+                                <p>Order confirmed, handed over within 48 hours etc; Tentative SLA</p>
+                            </ng-template>
+                        </ngb-panel>
+                        <ngb-panel id="deliveryQuestion-3" title="How long does delivery take?">
+                            <ng-template ngbPanelContent>
+                                <p>The orders are normally shipped within 2 working days from the order date. The order will be delivered to the customers within 5 working days from the date of shipment to serviceable locations.</p>
+                            </ng-template>
+                        </ngb-panel>
+                        <ngb-panel id="deliveryQuestion-4" title="Why can't you ship my order?">
+                            <ng-template ngbPanelContent>
+                                <p>Here are a few possible causes as to why we are not able to ship your order: </p>
+                                <ul>
+                                    <li>The product(s) you ordered are out of stock.</li>
+                                    <li>The product(s) failed in quality check before dispatch. We do not ship products to our customers which do not meet our quality standards.</li>
+                                </ul>
+                            </ng-template>
+                        </ngb-panel>
+                        <ngb-panel id="deliveryQuestion-5" title="How much will delivery cost?">
+                            <ng-template ngbPanelContent>
+                                <p>We do not charge any fee for delivery and its free of cost. </p>
+                            </ng-template>
+                        </ngb-panel>
+                    </ngb-accordion>
+                </div>
+
+                <div  class="faqContent" id="cancellation">
+                    <h5>Returns and Cancellation</h5>
+                    <ngb-accordion [closeOthers]="true">
+                        <ngb-panel id="cancellationQuestion-1" title="How do I return my in.abros.com product(s)?">
+                            <ng-template ngbPanelContent>
+                                <p>If you are a guest user, follow the steps mentioned below:</p>
+                                <ul>
+                                    <li>Click on the following link - Order check</li>
+                                    <li>Enter the order number, email id and Zip code</li>
+                                    <li>Select the product you wish to return</li>
+                                    <li>Select the pick-up address.</li>
+                                    <li>Select the pick-up date. (3-5 days window) </li>
+                                    <li>Choose the mode of Refund and submit the request. </li>
+                                </ul>
+                                <p>If you are a registered user:</p>
+                                <ul>
+                                    <li>Login to in.abros.com</li>
+                                    <li>Click on View Order History</li>
+                                    <li>Click on Exchange or Return</li>
+                                    <li>Select the product you wish to return</li>
+                                    <li>Select the pick-up address.</li>
+                                    <li>Select the pick-up date. (3-5 days window)</li>
+                                    <li>Choose the mode of Refund and submit the request.</li>
+                                </ul>
+                                <p>Visit our Returns and Exchange policy page for more info</p>
+                            </ng-template>
+                        </ngb-panel>
+                        <ngb-panel id="cancellationQuestion-2" title="How can I cancel my order?">
+                            <ng-template ngbPanelContent>
+                                <p>To cancel an order, call us on the toll-free number 1800-102-7862</p>
+                                <p>Please Note: If the order is not dispatched, then it will be cancelled immediately. In case the order is already dispatched, then we will try our level best to stop the shipment. However, we cannot commit to cancel it. In case delivery is attempted, you can refuse to accept the order. </p>
+                                <p>Visit our Returns and Exchange policy page for more info</p>
+                            </ng-template>
+                        </ngb-panel>
+                        <ngb-panel id="cancellationQuestion-3" title="When will I get the refund?">
+                            <ng-template ngbPanelContent>
+                                <p>Cancelled Orders</p>
+                                <ul>
+                                    <li>Prepaid- Refund will reflect in 5-15 working days depending upon your bank.</li>
+                                    <li>Puma Credits- refund will reflect in your registered account within 48 working hours.</li>
+                                </ul>
+                                <p>Returned Orders</p>
+                                <p>Once the product(s) reaches back our warehouse and passes the quality check, refund will be initiated within 48 hours. If your payment method is </p>
+                                <ul>
+                                    <li>Prepaid- Refund will reflect in 5-15 working days depending upon your bank.</li>
+                                    <li>Puma Credits- refund will reflect in your registered account within 48 working hours.</li>
+                                    <li>Cash on delivery – We shall send you a link on your registered number & Email Id within 48 hours, You can claim the amount by entering your UPI Id or your Bank Account information. (Link shall be valid up to 7 days)</li>
+                                </ul>
+                                <p>If it's been more than 15 working days or longer since you've received the notification and you still haven't received your refund, please get in touch with our customer support.1800-102-7862</p>
+                                <p>Visit our Returns and Exchange policy page for more info</p>
+                            </ng-template>
+                        </ngb-panel>
+                        <ngb-panel id="cancellationQuestion-4" title="Within how many days can I return my order?">
+                            <ng-template ngbPanelContent>
+                                <p>You can return all items purchased on puma.com up to 30 days from the date of delivery. Please note that it is only possible for us to accept items that are returned in their original state. The merchandise must not show signs of wear.</p>
+                                <p>Also, the following product types are not applicable for a return:</p>
+                                <ul>
+                                    <li>Bodywear</li>
+                                    <li>Socks</li>
+                                </ul>
+                                <p>Visit our Returns and Exchange policy page for more info</p>
+                            </ng-template>
+                        </ngb-panel>
+                        <ngb-panel id="cancellationQuestion-5" title="Can I exchange my product(s)? ">
+                            <ng-template ngbPanelContent>
+                                <p>Currently, we do not have an exchange policy. You can return the product and get the refund for the same.</p>
+                            </ng-template>
+                        </ngb-panel>
+                        <ngb-panel id="cancellationQuestion-6" title="Why do I have to wait for Puma to receive my returned product(s) before I can get a refund? ">
+                            <ng-template ngbPanelContent>
+                                <p>Before we can start processing your refund, we need to make sure that your returned products meet our return's terms and conditions which are as follows:</p>
+                                <ul>
+                                    <li>The product falls within our 30-day return period. That's 30 days since the day you received the order</li>
+                                    <li>The product/products isn’t/aren’t worn beyond normal use. </li>
+                                    <li>The product/products is/are returned in their original packaging.</li>
+                                    <li>The product still has its original label or tags attached (in case of clothing).</li>
+                                </ul>
+                                <p>If your product(s) meet the above criteria, we shall proceed with your refund request. If your returned product(s) does not meet the criteria above, we cannot accept the items and unfortunately won't be able to give you a refund.</p>
+                                <p>Visit our Returns and Exchange policy page for more info</p>
+                            </ng-template>
+                        </ngb-panel>
+                        <ngb-panel id="cancellationQuestion-7" title="How will I get my refund for the product I returned?">
+                            <ng-template ngbPanelContent>
+                                <p>You will receive your refund to the same method (Debit/Credit Card/Net Banking/Wallets) that you used to pay for the product(s).</p>
+                                <p>COD - We will refund the amount into your bank account as per the bank details shared by you when raising a return request online.</p>
+                                <p>Visit our Returns and Exchange policy page for more info</p>
+                            </ng-template>
+                        </ngb-panel>
+                        <ngb-panel id="cancellationQuestion-8" title="When will ABROS receive my return package? ">
+                            <ng-template ngbPanelContent>
+                                <p>From the day you handover the product to our transporter, it can take up to 2 - 5 business days for the package to be delivered to our warehouse. Unfortunately, the timelines may vary as these things cannot be controlled by us. </p>
+                                <p>As soon your package arrives at our warehouse, you will receive an email to confirming that the return process is completed.</p>
+                                <p>Visit our Returns and Exchange policy page for more info</p>
+                            </ng-template>
+                        </ngb-panel>
+                        <ngb-panel id="cancellationQuestion-9" title="If I self-ship the product, will you reimburse the charges?">
+                            <ng-template ngbPanelContent>
+                                <p>Yes, once the return product clears the quality check, we will refund INR 200/- in form of Puma Credits. </p>
+                                <p>Visit our Returns and Exchange policy page for more info</p>
+                            </ng-template>
+                        </ngb-panel>
+                        <ngb-panel id="cancellationQuestion-10" title="What are the conditions for returning my product(s)?">
+                            <ng-template ngbPanelContent>
+                                <p>For a return to be accepted, it must meet the following conditions:</p>
+                                <ul>
+                                    <li>The product must be unused and unworn.</li>
+                                    <li>The product must be in its original state and packaging.</li>
+                                    <li>Apparel & Footwear must have the original tags attached.Accessories must have all parts of the original packaging. Also, Footwear must be in the original shoe box. </li>
+                                </ul>
+                                <p>Below products are excluded from returns:</p>
+                                <ul>
+                                    <li>Customized and personalized products, except in case of manufacturing defects </li>
+                                    <li>Innerwear, Lingerie, Swim wear, Socks </li>
+                                </ul>
+                                <p>Visit our Returns and Exchange policy page for more info</p>
+                            </ng-template>
+                        </ngb-panel>
+                    </ngb-accordion>
+                </div>
+
+                <div  class="faqContent" id="account">
+                    <h5>Account</h5>
+                    <ngb-accordion [closeOthers]="true">
+                        <ngb-panel id="accountQuestion-1" title="How can I create an account?">
+                            <ng-template ngbPanelContent>
+                                <p>To create an account, follow the steps mentioned below:</p>
+                                <ul>
+                                    <li>Visit quicklinks on the top right corner of the site and click on the 'User Icon', on the pop up window click on 'Register Here' </li>
+                                    <li>Enter your personal information (Your first and last name). </li>
+                                    <li>Next, enter your email ID, create a password and confirm it</li>
+                                    <li>Complete the process by clicking Create Account.</li>
+                                </ul>
+                            </ng-template>
+                        </ngb-panel>
+                        <ngb-panel id="accountQuestion-2" title="How do I reset my account password? ">
+                            <ng-template ngbPanelContent>
+                                <p>It's easy to re-set your password. visit the account sign in page. Click Forgot Password, enter your registered email address and click ‘Submit’. We'll send you a new link on your registered email ID to set your password.</p>
+                            </ng-template>
+                        </ngb-panel>
+                    </ngb-accordion>
+                </div>
+
+                <div  class="faqContent" id="product">
+                    <h5>Products</h5>
+                    <ngb-accordion [closeOthers]="true">
+                        <ngb-panel id="productsQuestion-1" title="How do I clean my Puma shoes, apparel or accessories? ">
+                            <ng-template ngbPanelContent>
+                                <p>Apparels</p>
+                                <p>Please pay close attention to the care instructions provided with each article of PUMA clothing. Many of our products should not be put in a dryer, for example, to prevent shrinkage. In general, turn your PUMA clothes inside out and then wash and iron them to protect the printed graphics and embroidery from damage.</p>
+                                <p>Footwear</p>
+                                <p>Our high-performance shoes require little maintenance because they're tough and durable. By following these simple directions, you'll enjoy your PUMA shoes even longer:</p>
+                                <ul>
+                                    <li>Clean your shoes immediately after use if they are exposed to mud or dirt. </li>
+                                    <li>Use your shoes only for their intended purpose.</li>
+                                    <li>Dry your shoes by removing the footbed and allowing them to air dry. </li>
+                                    <li>Pack your shoes with crumpled newspaper to help them retain their shape.</li>
+                                    <li>Never machine-wash or machine-dry your shoes. </li>
+                                    <li>Keep your shoes away from sources of extreme heat, such as radiators, dryers, or space heaters. </li>
+                                </ul>
+                                <p>Cleaning Instructions</p>
+                                <ul>
+                                    <li>Leather: Hand wash using a soft cloth dampened with mild soap and cold water. Do not immerse or soak in water.</li>
+                                    <li>Nylon and canvas: Using a soft cloth, gently scrub the uppers using mild soap and cold water. Air dry. Do not bleach or use harsh cleaning agents.</li>
+                                    <li>Suede and nubuck: Use a brush specifically designed for suede to keep the outside surface of your shoes clean. </li>
+                                    <li>Synthetic leather: Use a soft cloth or soft bristle-brush to gently scrub the uppers using mild soap and cold water. Air dry </li>
+                                </ul>
+                            </ng-template>
+                        </ngb-panel>
+                        <ngb-panel id="productsQuestion-2" title="How can I customize a PUMA Product?">
+                            <ng-template ngbPanelContent>
+                                <p>As of now we don't offer any customization online. However, you can visit our 100ft store in Bangalore to get customization done - https://in.puma.com/in/en/store-finder</p>
+                            </ng-template>
+                        </ngb-panel>
+                        <ngb-panel id="productsQuestion-3" title="Do Puma shoes have a warranty?">
+                            <ng-template ngbPanelContent>
+                                <p>Yes, all Puma products comes with a warranty of 90 days from the date of purchase. </p>
+                            </ng-template>
+                        </ngb-panel>
+                        <ngb-panel id="productsQuestion-4" title="How do I get Puma’s newest sneaker releases?">
+                            <ng-template ngbPanelContent>
+                                <p>You can visit our Launch Calendar (Men and Women section) and visit our website on the date of launch to place the order. </p>
+                            </ng-template>
+                        </ngb-panel>
+                        <ngb-panel id="productsQuestion-5" title="Sustainability? ">
+                            <ng-template ngbPanelContent>
+                                <p>Click on the link - Sustainability to know more</p>
+                            </ng-template>
+                        </ngb-panel>
+                        <ngb-panel id="productsQuestion-6" title="How do I find the right size and fit?">
+                            <ng-template ngbPanelContent>
+                                <p>All PUMA products have a size chart on the product page</p>
+                            </ng-template>
+                        </ngb-panel>
+                        <ngb-panel id="productsQuestion-7" title="Which size chart does Puma follow on the website?">
+                            <ng-template ngbPanelContent>
+                                <p>For shoes we follow UK size, for apparel we follow US size and our accessories are mostly OSFA (One size fits all) </p>
+                            </ng-template>
+                        </ngb-panel>
+                    </ngb-accordion>
+                </div>
+
+                <div  class="faqContent" id="promotions">
+                    <h5>Promotions and Vouchers</h5>
+                    <ngb-accordion [closeOthers]="true">
+                        <ngb-panel id="promotionsQuestion-1" title="How do I apply the PUMA voucher code?">
+                            <ng-template ngbPanelContent>
+                                <p>You can apply the PUMA voucher code under the “Enter Coupon Code” option on the check-out page.</p>
+                            </ng-template>
+                        </ngb-panel>
+                        <ngb-panel id="promotionsQuestion-2" title="What should I do if I’m not able to apply my coupon?">
+                            <ng-template ngbPanelContent>
+                                <p>Our Gift vouchers work only on specific products. Please read the Terms and Conditions that come with your voucher to check whether the voucher applies to your order or not. </p>
+                                <p>Make sure you have entered the voucher code exactly as it appears. It's easy to make mistakes if you enter the code manually.</p>
+                            </ng-template>
+                        </ngb-panel>
+                        <ngb-panel id="promotionsQuestion-3" title="Will my voucher be refunded if I return/ cancel the order?">
+                            <ng-template ngbPanelContent>
+                                <p>The discount voucher will not be refunded in case of returns and cancellations. If there is an option of re-activation, the voucher would be re-activated. </p>
+                            </ng-template>
+                        </ngb-panel>
+                    </ngb-accordion>
+                </div>
+
+                <div  class="faqContent" id="stores">
+                    <h5>Stores</h5>
+                    <ngb-accordion [closeOthers]="true">
+                        <ngb-panel id="storeQuestion-1" title="How do I find a nearest Puma Store? ">
+                            <ng-template ngbPanelContent>
+                                <ul>
+                                    <li>You can find the all stores on the following link - Store Finder</li>
+                                    <li>or Google - Puma Store + 'Area Name' , the search results will list all the stores present in that area.</li>
+                                </ul>
+                            </ng-template>
+                        </ngb-panel>
+                        <ngb-panel id="storeQuestion-2" title="How can I place an exchange request at puma stores?">
+                            <ng-template ngbPanelContent>
+                                <p>If your product is purchased from a PUMA retail stores, please address this matter with the store from which the item was originally purchased.</p>
+                                <ul>
+                                    <li>For exchange or claim, it is mandatory to have the article inspected by the store team.</li>
+                                    <li>Store team can only offer a exchange against article available at the store at the time of the exchange/claim being made.</li>
+                                    <li>Replacement against exchange/claims will be subject to availability of the same product. In case, the same product is not available at the store, then a replacement will be adjusted against the subsequent purchase at the same store.</li>
+                                    <li>The value of the replaced article will be equal to the original purchase price of the exchanged/claimed article, as mentioned in the Invoice, irrespective of the current price of the exchanged/claimed article, at the time of the exchange/claim being made.</li>
+                                    <li>If the value of the replaced article is less than the original value of the exchanged/claimed article, there will be no cash refund, or a credit note issued.</li>
+                                    <li>If the value of the replaced article is more than the original value, the store will recover the difference in cash/card against the sale.</li>
+                                    <li>No warranty/exchange for articles purchased on discount or during the sale period</li>
+                                    <li>Carrying the Original Bill and the Product with the tags intact is mandatory</li>
+                                </ul>
+                            </ng-template>
+                        </ngb-panel>
+                        <ngb-panel id="storeQuestion-3" title="What are the conditions for returning my product(s)?">
+                            <ng-template ngbPanelContent>
+                                <p>Claims are entertained only against manufacturing defects and admissible when shoes have been appropriately used. No claim is admissible on socks & bodywears.</p>
+                                <p>Please refer the following link for more info - Returns</p>
+                            </ng-template>
+                        </ngb-panel>
+                    </ngb-accordion>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

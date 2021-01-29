@@ -28,6 +28,7 @@ import { OrderReviewComponent } from './order-review/order-review.component';
 import { OrderDetailComponent } from './order-detail/order-detail.component';
 import { OtpSubmissionComponent } from './otp-submission/otp-submission.component';
 import { OrderSummaryComponent } from './order-summary/order-summary.component';
+import { FaqComponent } from './faq/faq.component';
 
 @NgModule({
   declarations: [
@@ -52,7 +53,8 @@ import { OrderSummaryComponent } from './order-summary/order-summary.component';
     OrderReviewComponent,
     OrderDetailComponent,
     OtpSubmissionComponent,
-    OrderSummaryComponent
+    OrderSummaryComponent,
+    FaqComponent
   ],
   imports: [
     BrowserModule,
